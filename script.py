@@ -70,21 +70,22 @@ def gmail_login():
     driver.find_element_by_xpath("//*[@id='yDmH0d']/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div/div[1]/div[1]/div[3]/div[1]/div/div/div").click()
     time.sleep(180)'''
         # Join class
+        
     driver.find_element_by_xpath('''//*[@id="yDmH0d"]/c-wiz/div/div/div[5]/div[3]/div/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/span/span''').click()
 
 # Conditions which checks the time and goes to the classlink if Classes are happening at that time.
 
 # Class1  Subject - ACA
-if current_time == "10:00 / Monday" or current_time == "10:10 / Monday" or current_time == "12:00 / Tuesday" or current_time == "12:10 / Tuesday" or current_time == "11:00 / Wednesday" or current_time == "11:10 / Wednesday" or current_time == "01:40 / Friday" or current_time == "01:50 / Friday":
-    sub = "https://meet.google.com/mdq-gmmo-mkp"
-    driver = webdriver.Chrome(chrome_options=opt, executable_path=r'chromedriver') 
+if current_time == "20:23 / Tuesday" or current_time == "10:10 / Monday" or current_time == "12:00 / Tuesday" or current_time == "12:10 / Tuesday" or current_time == "11:00 / Wednesday" or current_time == "11:10 / Wednesday" or current_time == "01:40 / Friday" or current_time == "01:50 / Friday":
+    sub = "https://meet.google.com/nmf-jimc-kis"
+    driver = webdriver.Chrome(chrome_options=opt, executable_path=r'chromedriver.exe') 
     gmail_login()
     
 
 # Class2 Subject - NN
-elif current_time == "15:45 / Monday" or current_time == "10:15 / Monday" or current_time == "01:40 / Wednesday" or current_time == "01:50 / Wednesday" or current_time == "12:00 / Thursday" or current_time == "12:10 / Thursday" or current_time == "10:00 / Friday" or current_time == "10:10 / Friday":
+elif current_time == "20:25 / Tuesday" or current_time == "10:15 / Monday" or current_time == "01:40 / Wednesday" or current_time == "01:50 / Wednesday" or current_time == "12:00 / Thursday" or current_time == "12:10 / Thursday" or current_time == "10:00 / Friday" or current_time == "10:10 / Friday":
     sub = "https://meet.google.com/efw-ygig-sph"
-    driver = webdriver.Chrome(chrome_options=opt, executable_path=os.environ.get("CHROMEDRIVER_PATH"))
+    driver = webdriver.Chrome(chrome_options=opt, executable_path=r'chromedriver')
     gmail_login()
     
 
